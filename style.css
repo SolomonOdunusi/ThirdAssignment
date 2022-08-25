@@ -16,7 +16,7 @@
 .box {
     border: 0px;
     background-color: white;
-    margin: 30px;
+    margin: 20px;
     width: 25%;
     box-shadow: 0 3rem 6rem rgb(0 0 0 / 10%);
     height: fit-content;
@@ -35,6 +35,7 @@ h2, p {
 }
 button {
     width: 280px;
+    max-width: 100%;
     cursor: pointer;
     border: none ;
     background-color: #e6ecff;
@@ -76,20 +77,59 @@ justify-content: space-between;
 @media screen and (max-width: 900px){
     .box {
         width: 30%;
-        margin: 30px;
+        margin: 20px;
     }
     .container {
         flex-direction: column;
-        margin-right: 50px;
+        width: 100%;
+        margin-right: 20px;
+    }
+    button {
+        width: 80%;
     }
 }
 @media screen and (max-width: 700px){
     .container {
         flex-direction: column;
     }
+    .img {
+        width: 100%;
+    }
     .box {
         margin-bottom:  30px;
-        width: 30%;
+        width: 25%;
+    }
+    button {
+        max-width: 80%;
+       margin-right: 20px;
+       justify-content: center;
+        
+    }
+}
+@media screen and (max-width: 600px){
+    .container {
+        flex-direction: column;
+    }
+    .box {
+        margin-bottom:  30px;
+        width: 20%;
+    }
+    button {
+        width: 80px;
+        max-width: 80%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 500px){
+    .container {
+        flex-direction: row;
+    }
+    .box {
+        margin-bottom:  30px;
+        width: 80%;
+    }
+    button {
+        width: 80%;
     }
 }
 @media screen and (max-width: 400px){
@@ -100,13 +140,21 @@ justify-content: space-between;
     margin-bottom: 30px;
     width: 80%;
   }
+button {
+    width: 80%;
+    justify-content: center;
 }
-@media screen and (max-width: 500px){
+}
+@media screen and (max-width: 300px){
     .container {
-        flex-direction: row;
+      flex-direction: row;
     }
     .box {
-        margin-bottom:  30px;
-        width: 80%;
+      margin-bottom: 30px;
+      width: 80%;
     }
-}
+  button {
+      width: 80%;
+      justify-content: center;
+  }
+  }
