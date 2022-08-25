@@ -102,9 +102,14 @@ justify-content: space-between;
     button {
         max-width: 80%;
        margin-right: 20px; 
-      
+      position: relative;
+      right: 10px;
     }
-    
+    span {
+        position: relative;
+        right: 60px;
+    }
+}
 @media screen and (max-width: 600px){
     .container {
         flex-direction: column;
